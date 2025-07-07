@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+}
+
+.counter-row {
+  margin-bottom: 24px;
+}
+
+.counter {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.counter.zero {
+  color: #3498db;  /* Blu quando è 0 */
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Bottone per Incremento - Blu */
+button.inc {
+  background: #232ED1;  /* Colore Blu scuro */
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;  /* Angoli arrotondati */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+button.inc:hover {
+  background: #1e23a6;  /* Colore blu scuro al passaggio del mouse */
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+button.inc:active {
+  background: #191a84;  /* Colore blu più scuro quando il bottone è premuto */
+  transform: translateY(2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone per Reset - Rosa */
+button.reset {
+  background: linear-gradient(145deg, #ff66b2, #ff3385);  /* Rosa e Fucsia */
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;  /* Angoli più arrotondati */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+button.reset:hover {
+  background: linear-gradient(145deg, #ff3385, #ff66b2);  /* Cambio gradiente in hover */
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+button.reset:active {
+  background: linear-gradient(145deg, #e60073, #ff3385);  /* Gradiente più scuro al click */
+  transform: translateY(2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
